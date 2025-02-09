@@ -16,14 +16,14 @@ const LatestBlogs = ({ blogs }: { blogs: Blog[] }) => {
         </i>
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-        {blogs.slice(0, 2).map((blog) => (
-          <LatestBlogCard key={blog.id} blog={blog} />
+        {blogs?.slice(0, 2).map((blog) => (
+          <LatestBlogCard key={blog?.id} blog={blog} />
         ))}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-5">
-        {blogs.slice(2, 5).map((blog) => (
-          <BlogCard key={blog.id} blog={blog} />
+        {blogs?.slice(2, 5).map((blog) => (
+          <BlogCard key={blog?.id} blog={blog} />
         ))}
       </div>
       <div className="text-center">
